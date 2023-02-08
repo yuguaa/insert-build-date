@@ -1,4 +1,5 @@
-import type { Compiler } from "webpack";
+import  { Compiler } from "webpack";
+
 
 class InsertBuildDate {
 	apply(compiler: Compiler) {
