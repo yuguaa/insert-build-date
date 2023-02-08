@@ -1,6 +1,6 @@
 {
-  "name": "insert-build-date",
-  "version": "1.0.6",
+  "name": "insert-build-date-monorepo",
+  "version": "1.0.7",
   "description": "",
   "main": "index.js",
   "scripts": {
