@@ -1,11 +1,9 @@
-import { Compiler } from "webpack";
-
 class InsertBuildDate {
-	apply(compiler: Compiler) {
+	apply(compiler) {
 		compiler.hooks.compilation.tap("Compilation", (compilation) => {
-			(compilation.hooks as any).htmlWebpackPluginAfterHtmlProcessing.tap(
+			compilation.hooks.htmlWebpackPluginAfterHtmlProcessing.tap(
 				"htmlWebpackPluginAfterHtmlProcessing",
-				(data: { html: string }) => {
+				(data) => {
 					data.html = data.html.replace(
 						"<head>",
 						`<head><meta name="build-date" content="${new Date().toLocaleString()}">`
