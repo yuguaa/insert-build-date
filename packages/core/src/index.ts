@@ -1,5 +1,4 @@
-import  { Compiler } from "webpack";
-
+import { Compiler } from "webpack";
 
 class InsertBuildDate {
 	apply(compiler: Compiler) {
@@ -17,4 +16,4 @@ class InsertBuildDate {
 	}
 }
 
-export default InsertBuildDate;
+module.exports = InsertBuildDate;
