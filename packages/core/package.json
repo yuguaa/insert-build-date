@@ -1,6 +1,6 @@
 {
-  "name": "@yuguaa/insert-build-date",
-  "version": "1.0.10",
+  "name": "@yugu/insert-build-date",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

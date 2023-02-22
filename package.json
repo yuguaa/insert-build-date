@@ -1,18 +1,18 @@
 {
-  "name": "@yuguaa/insert-build-date-monorepo",
-  "version": "1.0.10",
+  "name": "@yugu/insert-build-date-monorepo",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
-  "homepage": "https://github.com/yuguaa/@yuguaa/insert-build-date",
+  "homepage": "https://github.com/yugu/@yugu/insert-build-date",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yuguaa/@yuguaa/insert-build-date"
+    "url": "https://github.com/yugu/@yugu/insert-build-date"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "pnpm --filter @yuguaa/insert-build-date build",
-    "publish": "bumpp package.json packages/core/package.json && pnpm --filter @yuguaa/insert-build-date publish --access public",
-    "release": "pnpm --filter @yuguaa/insert-build-date publish --access public"
+    "prepublish": "pnpm --filter @yugu/insert-build-date build",
+    "publish": "bumpp package.json packages/core/package.json && pnpm --filter @yugu/insert-build-date publish --access public",
+    "release": "pnpm --filter @yugu/insert-build-date publish --access public"
   },
   "keywords": [],
   "author": "",
