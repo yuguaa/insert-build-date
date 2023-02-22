@@ -3,9 +3,9 @@ import  { Compiler } from "webpack";
 
 class InsertBuildDate {
 	apply(compiler: Compiler) {
-		compiler.hooks.compilation.tap("InsertBuildDate", (compilation) => {
+		compiler.hooks.compilation.tap("Compilation", (compilation) => {
 			(compilation.hooks as any).htmlWebpackPluginAfterHtmlProcessing.tap(
-				"InsertBuildDate",
+				"htmlWebpackPluginAfterHtmlProcessing",
 				(data: { html: string }) => {
 					data.html = data.html.replace(
 						"<head>",
